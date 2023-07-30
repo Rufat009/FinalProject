@@ -79,6 +79,11 @@ public partial class MainWindow : Window
                 PublicationYear = int.Parse(PublicationYearTextBox.Text),
             };
             books.Add(newBook);
+            MessageBox.Show(
+               messageBoxText: "Book added",
+               caption: "Book added",
+               button: MessageBoxButton.OK,
+               icon: MessageBoxImage.Information);
 
             repository.SaveBooks(books);
             BooksListView.ItemsSource = repository.LoadBooks();
