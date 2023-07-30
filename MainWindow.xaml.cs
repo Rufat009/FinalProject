@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -21,12 +22,15 @@ namespace LibProject;
 
 public partial class MainWindow : Window
 {
+    
+
     private JsonRepository repository = new JsonRepository();
     const string path = "books.json";
     public MainWindow()
     {
         InitializeComponent();
         BooksListView.ItemsSource = repository.LoadBooks();
+        
     }
 
     private void SetDefault()
@@ -160,4 +164,13 @@ public partial class MainWindow : Window
     }
 
     private void ExitButton_Click(object sender, RoutedEventArgs e) => this.Close();
+
+
+    protected override void OnClosing(CancelEventArgs e)
+    {
+        new Window2().Show();
+        base.OnClosing(e);
+    }
+
+
 }

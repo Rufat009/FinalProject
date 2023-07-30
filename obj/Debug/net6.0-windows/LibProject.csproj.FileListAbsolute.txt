@@ -44,3 +44,30 @@ C:\Users\Ahmed_ur54\Desktop\New folder (2)\Project\obj\Debug\net6.0-windows\refi
 C:\Users\Ahmed_ur54\Desktop\New folder (2)\Project\obj\Debug\net6.0-windows\LibProject.pdb
 C:\Users\Ahmed_ur54\Desktop\New folder (2)\Project\obj\Debug\net6.0-windows\LibProject.genruntimeconfig.cache
 C:\Users\Ahmed_ur54\Desktop\New folder (2)\Project\obj\Debug\net6.0-windows\ref\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\LibProject.exe
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\LibProject.deps.json
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\LibProject.runtimeconfig.json
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\LibProject.pdb
+C:\Users\user\Desktop\ProjectWork\FinalProject\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject_MarkupCompile.cache
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject_MarkupCompile.lref
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.g.resources
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.AssemblyInfo.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.csproj.CopyComplete
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\refint\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.pdb
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.genruntimeconfig.cache
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\ref\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window1.g.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window1.baml
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window2.g.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window2.baml
