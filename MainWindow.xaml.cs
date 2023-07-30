@@ -177,5 +177,9 @@ public partial class MainWindow : Window
         base.OnClosing(e);
     }
 
+    private void ExitFromShowBook_Click(object sender, RoutedEventArgs e)
+    {
+        SetDefault();
+    }
 
 }
