@@ -67,7 +67,7 @@ C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\refint\L
 C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.pdb
 C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\LibProject.genruntimeconfig.cache
 C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\ref\LibProject.dll
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\View\Window2.g.cs
+C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\View\Window2.baml
 C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window1.g.cs
 C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window1.baml
-C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window2.g.cs
-C:\Users\user\Desktop\ProjectWork\FinalProject\obj\Debug\net6.0-windows\Window2.baml

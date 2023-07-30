@@ -1,12 +1,12 @@
-﻿using Newtonsoft.Json;
+﻿using LibProject.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace LibProject;
+namespace LibProject.Service;
 
 public class JsonRepository
 {
@@ -31,7 +31,7 @@ public class JsonRepository
     }
     public void SaveBooks(List<Library> books)
     {
-        string json = JsonConvert.SerializeObject(books, Newtonsoft.Json.Formatting.Indented);
+        string json = JsonConvert.SerializeObject(books, Formatting.Indented);
         File.WriteAllText(path, json);
     }
 }
