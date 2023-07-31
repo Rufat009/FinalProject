@@ -7,21 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Window1.xaml.cs">
+    <Compile Update="AddBook.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="View\Window2.xaml.cs">
+    <Compile Update="DeleteBookxaml.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EditBook.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ShowWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="AddBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DeleteBookxaml.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EditBook.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Window1.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="View\Window2.xaml">
+    <Page Update="ShowWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

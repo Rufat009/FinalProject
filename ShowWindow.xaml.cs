@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,19 +15,13 @@ using System.Windows.Shapes;
 namespace LibProject
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for ShowWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class ShowWindow : Window
     {
-        public Window1()
+        public ShowWindow()
         {
             InitializeComponent();
-        }
-
-        protected override void OnClosing(CancelEventArgs e)
-        {
-            new MainWindow().Show();
-            base.OnClosing(e);
         }
     }
 }

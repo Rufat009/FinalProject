@@ -1,0 +1,28 @@
+﻿<Window x:Class="LibProject.EditBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibProject"
+        mc:Ignorable="d"
+        Title="EditBook" Height="450" Width="800">
+    <StackPanel Grid.Column="1"  x:Name="EditMenu" Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" Text="Id of book you want to edit: " Margin="0 10 20 0"/>
+            <TextBox x:Name="editBookId" FontSize="30" Margin="0 10 0 0" Width="50"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" Text="New Title: " Margin="0 10 20 0"/>
+            <TextBox x:Name="newTitleTextBox" FontSize="30" Margin="0 10 0 0" Width="300"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" Text="New Author: " Margin="0 10 20 0"/>
+            <TextBox x:Name="newAuthorTextBox" FontSize="30" Margin="0 10 0 0" Width="300"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock FontSize="30" Text="New Publication Year: " Margin="0 10 20 0"/>
+            <TextBox x:Name="newPublicationYearTextbox" FontSize="30" Margin="0 10 0 0" Width="150"/>
+        </StackPanel>
+        <Button Height="50" Margin="100" Content="Edit" Click="Button_Click_2"/>
+    </StackPanel>
+</Window>

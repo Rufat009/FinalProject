@@ -45,26 +45,23 @@ public partial class MainWindow : Window
 
     private void ShowButton_Click(object sender, RoutedEventArgs e)
     {
-        SetDefault();
-        ShowMenu.Visibility = Visibility.Visible;
+        new ShowWindow().ShowDialog();
     }
 
     private void AddButton_Click(object sender, RoutedEventArgs e)
     {
-        SetDefault();
-        AddMenu.Visibility = Visibility.Visible;
+        new AddBook().ShowDialog();
     }
 
     private void EditButton_Click(object sender, RoutedEventArgs e)
     {
-        SetDefault();
-        EditMenu.Visibility = Visibility.Visible;
+        
+        new EditBook().ShowDialog();
     }
 
     private void DeleteButton_Click(object sender, RoutedEventArgs e)
     {
-        SetDefault();
-        DeleteMenu.Visibility = Visibility.Visible;
+       new DeleteBookxaml().ShowDialog();
     }
 
     private void Button_Click_1(object sender, RoutedEventArgs e) // Add
@@ -173,11 +170,7 @@ public partial class MainWindow : Window
     private void ExitButton_Click(object sender, RoutedEventArgs e) => this.Close();
 
 
-    protected override void OnClosing(CancelEventArgs e)
-    {
-        new Window2().Show();
-        base.OnClosing(e);
-    }
+    
 
     private void ExitFromShowBook_Click(object sender, RoutedEventArgs e)
     {

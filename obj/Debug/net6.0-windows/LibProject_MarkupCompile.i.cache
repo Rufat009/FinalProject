@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\user\Desktop\ProjectWork\FinalProject\App.xaml
-31593095030
+5-1376670237
 
-9-1340687892
+11-1975347370
 195-1328611075
-MainWindow.xaml;View\Window2.xaml;Window1.xaml;
+AddBook.xaml;DeleteBookxaml.xaml;EditBook.xaml;MainWindow.xaml;ShowWindow.xaml;
 
-False
+True
 
