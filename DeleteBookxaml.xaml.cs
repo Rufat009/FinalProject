@@ -38,7 +38,13 @@ namespace LibProject
                     throw new IndexOutOfRangeException("There is no such id");
                 books.RemoveAt(int.Parse(deleteBookId.Text) - 1);
                 repository.SaveBooks(books);
-          
+
+                MessageBox.Show(
+                   messageBoxText: "Book Deleted",
+                   caption: "Delete Book",
+                   button: MessageBoxButton.OK,
+                   icon: MessageBoxImage.Information);
+
             }
             catch (IndexOutOfRangeException ex)
             {

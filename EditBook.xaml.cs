@@ -50,6 +50,11 @@ namespace LibProject
                 }
 
                 repository.SaveBooks(books);
+                MessageBox.Show(
+                   messageBoxText: "Edit Success",
+                   caption: "Edit Book",
+                   button: MessageBoxButton.OK,
+                   icon: MessageBoxImage.Information);
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -66,6 +71,7 @@ namespace LibProject
                    caption: "Error",
                    button: MessageBoxButton.OK,
                    icon: MessageBoxImage.Error);
+
             }
         }
     }
