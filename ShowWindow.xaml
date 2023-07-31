@@ -7,8 +7,7 @@
         mc:Ignorable="d"
         Title="ShowWindow" Height="450" Width="800">
     <Grid Grid.Column="1" x:Name="ShowMenu">
-       
-        <ListView Name="BooksListView" Margin="0,0,0,24">
+        <ListView Name="BooksListView" Margin="0,0,0,55">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Id" Width="100" DisplayMemberBinding="{Binding Id}"/>
@@ -18,5 +17,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox x:Name="AuthorName" Margin="5,384,196,10"/>
+        <Button x:Name="Search" Content="Search" Margin="604,384,0,10" Click="Search_Click"/>
     </Grid>
 </Window>

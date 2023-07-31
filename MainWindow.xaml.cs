@@ -31,17 +31,10 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        BooksListView.ItemsSource = repository.LoadBooks();
+      
         
     }
 
-    private void SetDefault()
-    {
-        ShowMenu.Visibility = Visibility.Hidden;
-        AddMenu.Visibility = Visibility.Hidden;
-        EditMenu.Visibility = Visibility.Hidden;
-        DeleteMenu.Visibility = Visibility.Hidden;
-    }
 
     private void ShowButton_Click(object sender, RoutedEventArgs e)
     {
@@ -64,117 +57,10 @@ public partial class MainWindow : Window
        new DeleteBookxaml().ShowDialog();
     }
 
-    private void Button_Click_1(object sender, RoutedEventArgs e) // Add
-    {
-        try
-        {
-            List<Library> books = repository.LoadBooks();
-
-            Library newBook = new Library
-            {
-                Id = repository.GetLastBookId(books) + 1,
-                Title = TitleTextBox.Text,
-                Author = AuthorTextBox.Text,
-                PublicationYear = int.Parse(PublicationYearTextBox.Text),
-            };
-            books.Add(newBook);
-            MessageBox.Show(
-               messageBoxText: "Book added",
-               caption: "Book added",
-               button: MessageBoxButton.OK,
-               icon: MessageBoxImage.Information);
-
-            repository.SaveBooks(books);
-            BooksListView.ItemsSource = repository.LoadBooks();
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(
-               messageBoxText: ex.Message,
-               caption: "Publication Year Uncorrect",
-               button: MessageBoxButton.OK,
-               icon: MessageBoxImage.Error);
-        }
-    }
-
-    private void Button_Click_2(object sender, RoutedEventArgs e) // Edit
-    {
-
-        try
-        {
-            List<Library> books = repository.LoadBooks();
-
-            if (int.Parse(editBookId.Text) > repository.GetLastBookId(books))
-                throw new IndexOutOfRangeException("There is no such id");
-
-            foreach (var book in books)
-            {
-                if (book.Id == int.Parse(editBookId.Text))
-                {
-                    book.Title = newTitleTextBox.Text;
-                    book.Author = newAuthorTextBox.Text;
-                    book.PublicationYear = int.Parse(newPublicationYearTextbox.Text);
-                }
-            }
-
-            repository.SaveBooks(books);
-            BooksListView.ItemsSource = repository.LoadBooks();
-        }
-        catch (IndexOutOfRangeException ex)
-        {
-            MessageBox.Show(
-                messageBoxText: ex.Message,
-                caption: "Error",
-                button: MessageBoxButton.OK,
-                icon: MessageBoxImage.Error);
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(
-               messageBoxText: "Id Or Publication Year Uncorrect",
-               caption: "Error",
-               button: MessageBoxButton.OK,
-               icon: MessageBoxImage.Error);
-        }
-    }
-
-    private void Button_Click(object sender, RoutedEventArgs e) // Delete
-    {
-        try
-        {
-            List<Library> books = repository.LoadBooks();
-            if (int.Parse(deleteBookId.Text) > repository.GetLastBookId(books))
-                throw new IndexOutOfRangeException("There is no such id");
-            books.RemoveAt(int.Parse(deleteBookId.Text) - 1);
-            repository.SaveBooks(books);
-            BooksListView.ItemsSource = repository.LoadBooks();
-        }
-        catch (IndexOutOfRangeException ex)
-        {
-            MessageBox.Show(
-                messageBoxText: ex.Message,
-                caption: "Error",
-                button: MessageBoxButton.OK,
-                icon: MessageBoxImage.Error);
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show(
-               messageBoxText: "Id data type uncorrect",
-               caption: "Error",
-               button: MessageBoxButton.OK,
-               icon: MessageBoxImage.Error);
-        }
-    }
+    
 
     private void ExitButton_Click(object sender, RoutedEventArgs e) => this.Close();
 
 
-    
-
-    private void ExitFromShowBook_Click(object sender, RoutedEventArgs e)
-    {
-        SetDefault();
-    }
 
 }
